@@ -7,10 +7,10 @@ def get_user_move():
     move_str = move_str.replace(" ", "")
 
     try:
-        xfrom = int(move_str[0:1])
-        yfrom = int(move_str[2:3])
-        xto = int(move_str[3:4])
-        yto = int(move_str[5:6])
+        xfrom = int(move_str[0])
+        yfrom = int(move_str[2])
+        xto = int(move_str[4])
+        yto = int(move_str[6])
     except ValueError:
         print("Invalid syntax. Format: xfrom,yfrom xto,yto")
         return get_user_move()
